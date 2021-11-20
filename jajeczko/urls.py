@@ -20,6 +20,11 @@ from bekon import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.index, ),
+    path("index_szablon/", views.index_szablon, ),
+    path("xxx/<str:imie>/", views.przywitanie, ),
     path("mnozenie/<int:a>/", views.tabliczka),
+    path("mnozenie3", views.tablicza3),
     path("mnozenie/<int:a>/<int:b>/", views.tabliczka2),
+    path("liczby/<int:n>/", views.numbers),
+
 ]
